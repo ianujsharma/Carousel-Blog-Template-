@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Freebies</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf3f9;
+        }
+        /* Email Freebies Section */
+        
+        .email-freebies {
+            padding: 100px 0;
+            background-color: #ffffff;
+        }
+        
+        .freebie-photo {
+            max-width: 100%;
+            max-height: 400px;
+            /* Set your desired max-height */
+            height: auto;
+            display: block;
+            /* Ensures the image is treated as a block element */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .freebie-content {
+            padding: 0 20px;
+        }
+        
+        .freebie-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .freebie-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .freebie-content form {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allows inputs and button to wrap on smaller screens */
+        }
+        
+        .freebie-content input[type="email"] {
+            padding: 10px;
+            width: calc(100% - 120px);
+            /* Adjust width for smaller screens */
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .freebie-content button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #6c5ce7;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .freebie-content button:hover {
+            background-color: #4834d4;
+        }
+        /* Tablet styles */
+        
+        @media (max-width: 768px) {
+            .email-freebies {
+                padding: 50px 0;
+            }
+            .freebie-content h2 {
+                font-size: 28px;
+            }
+            .freebie-content p {
+                font-size: 14px;
+            }
+            .freebie-content input[type="email"] {
+                width: calc(100% - 120px);
+                /* Adjust width for smaller screens */
+            }
+            .freebie-photo {
+                max-height: 300px;
+                /* Adjust max-height for tablets */
+            }
+        }
+        /* Mobile styles */
+        
+        @media (max-width: 480px) {
+            .email-freebies {
+                padding: 30px 0;
+            }
+            .freebie-content h2 {
+                font-size: 24px;
+            }
+            .freebie-content p {
+                font-size: 12px;
+            }
+            .freebie-content form {
+                flex-direction: column;
+                /* Stack inputs and button vertically */
+                align-items: stretch;
+                /* Ensure full width for inputs and button */
+            }
+            .freebie-content input[type="email"] {
+                width: 100%;
+                /* Full width for mobile screens */
+                margin-right: 0;
+                /* Remove right margin */
+                margin-bottom: 10px;
+                /* Add bottom margin for spacing */
+            }
+            .freebie-content button {
+                width: 100%;
+                /* Full width for mobile screens */
+            }
+            .freebie-photo {
+                max-height: 200px;
+                /* Adjust max-height for mobile */
+                margin-top: 20px;
+                /* Add top margin for spacing */
+                display: block;
+                /* Ensures the image is treated as a block element */
+                margin-left: auto;
+                /* Center image */
+                margin-right: auto;
+                /* Center image */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="partials/nav.html"></div>
+
+    <section class="email-freebies">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="freebie-content">
+                        <h2>Get Your Freebie Now!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <form>
+                            <input type="email" placeholder="Your email address" class="footer-email-input">
+                            <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <img src="images/me.jpg" alt="Freebie Photo" class="freebie-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div data-include="partials/footer.html"></div>
+    <script src="partials/include.js"></script>
+
+
+
+</body>
+
+</html>
